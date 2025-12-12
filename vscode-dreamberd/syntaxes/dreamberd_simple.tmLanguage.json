@@ -1,0 +1,174 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "DreamBerd",
+    "scopeName": "source.dreamberd",
+    "fileTypes": [
+        "db",
+        "gom",
+        "dreamberd"
+    ],
+    "patterns": [
+        {
+            "name": "comment.line.double-slash.dreamberd",
+            "match": "//.*$"
+        },
+        {
+            "name": "storage.type.const-const-const.dreamberd",
+            "match": "\\bconst\\s+const\\s+const\\b"
+        },
+        {
+            "name": "storage.type.const-const.dreamberd", 
+            "match": "\\bconst\\s+const\\b"
+        },
+        {
+            "name": "storage.type.const-var.dreamberd",
+            "match": "\\bconst\\s+var\\b"
+        },
+        {
+            "name": "storage.type.var-const.dreamberd",
+            "match": "\\bvar\\s+const\\b"
+        },
+        {
+            "name": "storage.type.var-var.dreamberd",
+            "match": "\\bvar\\s+var\\b"
+        },
+        {
+            "name": "storage.type.const.dreamberd",
+            "match": "\\bconst\\b"
+        },
+        {
+            "name": "storage.type.var.dreamberd",
+            "match": "\\bvar\\b"
+        },
+        {
+            "name": "storage.type.function.dreamberd",
+            "match": "\\b(function|functi|funct|func|fun|fn|f)\\b"
+        },
+        {
+            "name": "keyword.control.dreamberd",
+            "match": "\\b(if|else|when|return|delete|reverse|await|async|noop)\\b"
+        },
+        {
+            "name": "keyword.other.dreamberd",
+            "match": "\\b(import|export|to|use|new|previous|next|current|class|className)\\b"
+        },
+        {
+            "name": "constant.language.boolean.dreamberd",
+            "match": "\\b(true|false|maybe|True|False)\\b"
+        },
+        {
+            "name": "constant.language.null.dreamberd",
+            "match": "\\b(null|undefined)\\b"
+        },
+        {
+            "name": "support.function.builtin.dreamberd",
+            "match": "\\b(print|Date\\.now)\\b"
+        },
+        {
+            "name": "string.quoted.double.dreamberd",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.dreamberd",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        {
+            "name": "string.quoted.single.dreamberd",
+            "begin": "'",
+            "end": "'",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.dreamberd",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        {
+            "name": "constant.numeric.integer.dreamberd",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "constant.numeric.float.dreamberd",
+            "match": "\\b\\d+\\.\\d+\\b"
+        },
+        {
+            "name": "constant.numeric.fraction.dreamberd",
+            "match": "\\b\\d+/\\d+\\b"
+        },
+        {
+            "name": "constant.numeric.word.dreamberd",
+            "match": "\\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\\b"
+        },
+        {
+            "name": "keyword.operator.comparison.dreamberd",
+            "match": "(====|===|==|!=|<=|>=|<|>)"
+        },
+        {
+            "name": "keyword.operator.arithmetic.dreamberd",
+            "match": "(\\+\\+|--|\\+|-|\\*|/|\\^|%)"
+        },
+        {
+            "name": "keyword.operator.logical.dreamberd",
+            "match": "(&&|\\|\\||;)"
+        },
+        {
+            "name": "keyword.operator.assignment.dreamberd",
+            "match": "(=>|=)"
+        },
+        {
+            "name": "punctuation.terminator.statement.dreamberd",
+            "match": "(!+|\\?+|¡)"
+        },
+        {
+            "name": "punctuation.separator.comma.dreamberd",
+            "match": ","
+        },
+        {
+            "name": "punctuation.definition.parameters.begin.dreamberd",
+            "match": "\\("
+        },
+        {
+            "name": "punctuation.definition.parameters.end.dreamberd",
+            "match": "\\)"
+        },
+        {
+            "name": "punctuation.definition.block.begin.dreamberd",
+            "match": "\\{"
+        },
+        {
+            "name": "punctuation.definition.block.end.dreamberd",
+            "match": "\\}"
+        },
+        {
+            "name": "punctuation.definition.array.begin.dreamberd",
+            "match": "\\["
+        },
+        {
+            "name": "punctuation.definition.array.end.dreamberd",
+            "match": "\\]"
+        },
+        {
+            "name": "punctuation.accessor.dreamberd",
+            "match": "\\."
+        },
+        {
+            "name": "punctuation.separator.key-value.dreamberd",
+            "match": ":"
+        },
+        {
+            "name": "punctuation.definition.file-separator.dreamberd",
+            "match": "={5,}"
+        },
+        {
+            "name": "entity.name.function.call.dreamberd",
+            "match": "\\b[a-zA-Z_$][a-zA-Z0-9_$]*(?=\\s*\\()"
+        },
+        {
+            "name": "variable.other.dreamberd",
+            "match": "\\b[a-zA-Z_$][a-zA-Z0-9_$]*\\b"
+        }
+    ]
+}

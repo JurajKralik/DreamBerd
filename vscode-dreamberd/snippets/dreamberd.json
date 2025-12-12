@@ -1,0 +1,218 @@
+{
+    "Print statement": {
+        "prefix": "print",
+        "body": [
+            "print($1)$2"
+        ],
+        "description": "Print a value to the console"
+    },
+    "Variable declaration (const)": {
+        "prefix": "const",
+        "body": [
+            "const $1 = $2$3"
+        ],
+        "description": "Declare a const variable (can be changed)"
+    },
+    "Variable declaration (const const)": {
+        "prefix": "constconst",
+        "body": [
+            "const const $1 = $2$3"
+        ],
+        "description": "Declare a constant variable (cannot be changed)"
+    },
+    "Global constant declaration": {
+        "prefix": "constconstconst",
+        "body": [
+            "const const const $1 = $2$3"
+        ],
+        "description": "Declare a global immutable constant"
+    },
+    "Variable declaration (var)": {
+        "prefix": "var",
+        "body": [
+            "var $1 = $2$3"
+        ],
+        "description": "Declare a variable"
+    },
+    "Function declaration (function)": {
+        "prefix": "function",
+        "body": [
+            "function $1($2) {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "Declare a function"
+    },
+    "Function declaration (func)": {
+        "prefix": "func",
+        "body": [
+            "func $1($2) {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "Declare a function (short form)"
+    },
+    "Function declaration (fun)": {
+        "prefix": "fun",
+        "body": [
+            "fun $1($2) {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "Declare a function (fun form)"
+    },
+    "Function declaration (fn)": {
+        "prefix": "fn",
+        "body": [
+            "fn $1($2) {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "Declare a function (shortest form)"
+    },
+    "Function declaration (f)": {
+        "prefix": "f",
+        "body": [
+            "f $1($2) {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "Declare a function (single letter)"
+    },
+    "If statement": {
+        "prefix": "if",
+        "body": [
+            "if ($1) {",
+            "    $2",
+            "}$3"
+        ],
+        "description": "If statement"
+    },
+    "When statement": {
+        "prefix": "when",
+        "body": [
+            "when ($1) {",
+            "    $2",
+            "}$3"
+        ],
+        "description": "When statement (executes when condition is met)"
+    },
+    "If-else statement": {
+        "prefix": "ifelse",
+        "body": [
+            "if ($1) {",
+            "    $2",
+            "} else {",
+            "    $3",
+            "}$4"
+        ],
+        "description": "If-else statement"
+    },
+    "Class declaration": {
+        "prefix": "class",
+        "body": [
+            "class $1 {",
+            "    $2",
+            "}$3"
+        ],
+        "description": "Class declaration"
+    },
+    "Array declaration": {
+        "prefix": "array",
+        "body": [
+            "const $1 = [$2]$3"
+        ],
+        "description": "Array declaration (remember: arrays start at -1!)"
+    },
+    "String interpolation": {
+        "prefix": "interp",
+        "body": [
+            "\"${$1}\"$2"
+        ],
+        "description": "String interpolation with dollar sign"
+    },
+    "Cape Verdean string interpolation": {
+        "prefix": "capeverdeinterp",
+        "body": [
+            "\"{$1€}\"$2"
+        ],
+        "description": "Cape Verdean string interpolation"
+    },
+    "Delete statement": {
+        "prefix": "delete",
+        "body": [
+            "delete $1$2"
+        ],
+        "description": "Delete a variable from memory"
+    },
+    "Reverse statement": {
+        "prefix": "reverse",
+        "body": [
+            "reverse$1"
+        ],
+        "description": "Reverse the last operation"
+    },
+    "Priority statement (!)": {
+        "prefix": "priority",
+        "body": [
+            "$1!$2"
+        ],
+        "description": "High priority statement with exclamation mark"
+    },
+    "Uncertain statement (?)": {
+        "prefix": "uncertain",
+        "body": [
+            "$1?$2"
+        ],
+        "description": "Uncertain statement with question mark"
+    },
+    "Maybe boolean": {
+        "prefix": "maybe",
+        "body": [
+            "maybe$1"
+        ],
+        "description": "Maybe boolean (could be true, false, or maybe)"
+    },
+    "Previous value": {
+        "prefix": "previous",
+        "body": [
+            "previous $1$2"
+        ],
+        "description": "Access the previous value of a variable"
+    },
+    "Current value": {
+        "prefix": "current",
+        "body": [
+            "current $1$2"
+        ],
+        "description": "Access the current value of a variable"
+    },
+    "Next value": {
+        "prefix": "next",
+        "body": [
+            "next $1$2"
+        ],
+        "description": "Access the next value of a variable"
+    },
+    "File separator": {
+        "prefix": "separator",
+        "body": [
+            "=====$1"
+        ],
+        "description": "File separator (5 or more equals signs)"
+    },
+    "Current time": {
+        "prefix": "now",
+        "body": [
+            "Date.now()$1"
+        ],
+        "description": "Get current date and time"
+    },
+    "No operation": {
+        "prefix": "noop",
+        "body": [
+            "noop$1"
+        ],
+        "description": "No operation (does nothing)"
+    }
+}

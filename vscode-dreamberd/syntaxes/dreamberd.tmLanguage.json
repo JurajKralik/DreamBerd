@@ -1,0 +1,308 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "DreamBerd",
+    "scopeName": "source.dreamberd",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#const-declarations"
+        },
+        {
+            "include": "#function-declarations"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#identifiers"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.dreamberd",
+                    "match": "//.*$"
+                }
+            ]
+        },
+        "const-declarations": {
+            "patterns": [
+                {
+                    "name": "storage.type.const-const-const.dreamberd",
+                    "match": "\\bconst\\s+const\\s+const\\b"
+                },
+                {
+                    "name": "storage.type.const-const.dreamberd",
+                    "match": "\\bconst\\s+const\\b"
+                },
+                {
+                    "name": "storage.type.const-var.dreamberd",
+                    "match": "\\bconst\\s+var\\b"
+                },
+                {
+                    "name": "storage.type.var-const.dreamberd",
+                    "match": "\\bvar\\s+const\\b"
+                },
+                {
+                    "name": "storage.type.var-var.dreamberd",
+                    "match": "\\bvar\\s+var\\b"
+                },
+                {
+                    "name": "storage.type.const.dreamberd",
+                    "match": "\\bconst\\b"
+                },
+                {
+                    "name": "storage.type.var.dreamberd",
+                    "match": "\\bvar\\b"
+                }
+            ]
+        },
+        "function-declarations": {
+            "patterns": [
+                {
+                    "name": "storage.type.function.dreamberd",
+                    "match": "\\b(function|functi|funct|func|fun|fn|f)\\b"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.dreamberd",
+                    "match": "\\b(if|else|when|return|delete|reverse|await|async|noop)\\b"
+                },
+                {
+                    "name": "keyword.other.dreamberd",
+                    "match": "\\b(import|export|to|use|new|previous|next|current|class|className)\\b"
+                },
+                {
+                    "name": "constant.language.boolean.dreamberd",
+                    "match": "\\b(true|false|maybe|True|False)\\b"
+                },
+                {
+                    "name": "constant.language.null.dreamberd",
+                    "match": "\\b(null|undefined)\\b"
+                },
+                {
+                    "name": "support.function.builtin.dreamberd",
+                    "match": "\\b(print|Date\\.now)\\b"
+                },
+                {
+                    "name": "support.type.dreamberd",
+                    "match": "\\b(Int|Int9|Int99|String|Char|Digit|RegExp|Regex|RegularExpression)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.quadruple.dreamberd",
+                    "begin": "\"{4,}",
+                    "end": "\"{4,}",
+                    "patterns": [
+                        {
+                            "include": "#string-interpolation"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.triple.dreamberd",
+                    "begin": "'''|\"{3}",
+                    "end": "'''|\"{3}",
+                    "patterns": [
+                        {
+                            "include": "#string-interpolation"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.double.dreamberd",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "include": "#string-interpolation"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.dreamberd",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "include": "#string-interpolation"
+                        }
+                    ]
+                }
+            ]
+        },
+        "string-interpolation": {
+            "patterns": [
+                {
+                    "name": "meta.interpolation.dreamberd",
+                    "begin": "(\\$|£|¥|€)\\{",
+                    "end": "\\}",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "punctuation.definition.template-expression.begin.dreamberd"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.template-expression.end.dreamberd"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
+                    "name": "meta.interpolation.cape-verdean.dreamberd",
+                    "begin": "\\{",
+                    "end": "(\\$|€)\\}",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.template-expression.begin.dreamberd"
+                        }
+                    },
+                    "endCaptures": {
+                        "1": {
+                            "name": "punctuation.definition.template-expression.end.dreamberd"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.fraction.dreamberd",
+                    "match": "\\b[0-9]+/[0-9]+\\b"
+                },
+                {
+                    "name": "constant.numeric.float.dreamberd",
+                    "match": "\\b[0-9]+\\.[0-9]+\\b"
+                },
+                {
+                    "name": "constant.numeric.integer.dreamberd",
+                    "match": "\\b[0-9]+\\b"
+                },
+                {
+                    "name": "constant.numeric.word.dreamberd",
+                    "match": "\\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\\b"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.comparison.dreamberd",
+                    "match": "====|===|==|!=|<=|>=|<|>"
+                },
+                {
+                    "name": "keyword.operator.arithmetic.dreamberd",
+                    "match": "\\+\\+|--|\\+|-|\\*|/|\\^|%"
+                },
+                {
+                    "name": "keyword.operator.logical.dreamberd",
+                    "match": "&&|\\|\\||;"
+                },
+                {
+                    "name": "keyword.operator.assignment.dreamberd",
+                    "match": "=>"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.terminator.statement.dreamberd",
+                    "match": "!+|\\?+|¡"
+                },
+                {
+                    "name": "punctuation.separator.comma.dreamberd",
+                    "match": ","
+                },
+                {
+                    "name": "punctuation.definition.parameters.begin.dreamberd",
+                    "match": "\\("
+                },
+                {
+                    "name": "punctuation.definition.parameters.end.dreamberd",
+                    "match": "\\)"
+                },
+                {
+                    "name": "punctuation.definition.block.begin.dreamberd",
+                    "match": "\\{"
+                },
+                {
+                    "name": "punctuation.definition.block.end.dreamberd",
+                    "match": "\\}"
+                },
+                {
+                    "name": "punctuation.definition.array.begin.dreamberd",
+                    "match": "\\["
+                },
+                {
+                    "name": "punctuation.definition.array.end.dreamberd",
+                    "match": "\\]"
+                },
+                {
+                    "name": "punctuation.accessor.dreamberd",
+                    "match": "\\."
+                },
+                {
+                    "name": "punctuation.separator.key-value.dreamberd",
+                    "match": ":"
+                },
+                {
+                    "name": "punctuation.definition.file-separator.dreamberd",
+                    "match": "={5,}"
+                }
+            ]
+        },
+        "identifiers": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.dreamberd",
+                    "match": "(?<=function\\s+|func\\s+|fun\\s+|fn\\s+|functi\\s+|f\\s+|funct\\s+)[a-zA-Z_$][a-zA-Z0-9_$]*"
+                },
+                {
+                    "name": "entity.name.function.call.dreamberd",
+                    "match": "[a-zA-Z_$][a-zA-Z0-9_$]*(?=\\s*\\()"
+                },
+                {
+                    "name": "entity.name.class.dreamberd",
+                    "match": "(?<=class\\s+|className\\s+)[a-zA-Z_$][a-zA-Z0-9_$]*"
+                },
+                {
+                    "name": "variable.other.dreamberd",
+                    "match": "[a-zA-Z_$👍🎯1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣][a-zA-Z0-9_$👍🎯1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣]*"
+                }
+            ]
+        }
+    }
+}
