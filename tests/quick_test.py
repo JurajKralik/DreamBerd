@@ -8,8 +8,8 @@ import os
 import sys
 from pathlib import Path
 
-# Add parent directory to path so we can import dreamberd
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add src directory to path so we can import dreamberd
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'src'))
 
 from dreamberd import run_dreamberd
 
