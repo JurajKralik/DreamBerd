@@ -1,0 +1,3 @@
+// Type equivalences
+print(String == Char[])!
+print(Int == Digit[])!

@@ -1,0 +1,6 @@
+// Variable variables can be re-assigned and edited
+var var name = "Luke"!
+name = "Lu"!
+name.push("k")!
+name.push("e")!
+print(name)!

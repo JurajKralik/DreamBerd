@@ -1,0 +1,7 @@
+// Variable lifetimes
+const const name1<2> = "Luke"!
+const const name2<20s> = "Luke"!
+const const name3<Infinity> = "Luke"!
+print(name1)!
+print(name2)!
+print(name3)!

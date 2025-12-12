@@ -1,0 +1,11 @@
+// Export and import
+===== add.gom ==
+function add(a, b) => {
+    return a + b!
+}
+
+export add to "main.gom"!
+
+===== main.gom ==
+import add!
+print(add(3, 2))!

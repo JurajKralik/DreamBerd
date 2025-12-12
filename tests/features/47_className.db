@@ -1,0 +1,7 @@
+// className keyword
+className Player {
+    const var health = 10!
+}
+
+const var player = new Player()!
+print(player.health)!

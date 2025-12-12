@@ -1,0 +1,3 @@
+// Lisp-style parentheses
+function add(a, b) => a + b!
+print((add (3, (add (5, 6)))))!

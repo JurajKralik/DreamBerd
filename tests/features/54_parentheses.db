@@ -1,0 +1,6 @@
+// Parentheses do nothing
+function add(a, b) => a + b!
+print(add(3, 2))!
+print(add 3, 2)!
+print((add (3, 2)))!
+print(add)3, 2(!)!

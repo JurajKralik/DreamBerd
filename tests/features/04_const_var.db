@@ -1,0 +1,5 @@
+// Constant variables can be edited but not re-assigned
+const var name = "Luke"!
+name.pop()!
+name.pop()!
+print(name)!

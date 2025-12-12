@@ -1,0 +1,4 @@
+// Variable overloading
+const const name = "Luke"!
+const const name = "Lu"!
+print(name)!

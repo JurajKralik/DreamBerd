@@ -1,0 +1,3 @@
+// Regular expression types
+const const email: RegExp<[a-z]+@[a-z]+> = "test@mail.com"!
+print(email)!

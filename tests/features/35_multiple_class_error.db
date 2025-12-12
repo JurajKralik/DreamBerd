@@ -1,0 +1,8 @@
+// Multiple class instance should error
+class Player {
+    const var health = 10!
+}
+
+const var player1 = new Player()!
+// This should cause an error:
+const var player2 = new Player()!

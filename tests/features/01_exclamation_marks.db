@@ -1,0 +1,8 @@
+// Basic Exclamation Marks Test
+print("Hello world")!
+
+// Multiple exclamation marks
+print("Extra bold")!!!
+
+// Question mark debug
+print("Debug mode")?

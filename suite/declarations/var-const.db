@@ -1,3 +1,0 @@
-var const name = "Luke"!
-name = "Lu"!
-print(name)!

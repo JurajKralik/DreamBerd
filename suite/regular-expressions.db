@@ -1,3 +1,0 @@
-const const name: /[a-zA-Z]+/ = "Luke"!
-
-print name!

@@ -1,3 +1,0 @@
-const var name = "Lu"!
-name.push("ke")!
-print(name)!

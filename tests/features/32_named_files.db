@@ -1,0 +1,8 @@
+// Named files
+======= add.gom =======
+function add(a, b) => {
+    return a + b!
+}
+
+======= main.gom =======
+print(add(3, 2))!

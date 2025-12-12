@@ -1,0 +1,4 @@
+// Semicolon as NOT operator
+if (;false) {
+    print("This should print")!
+}

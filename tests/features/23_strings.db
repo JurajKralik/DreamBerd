@@ -1,0 +1,7 @@
+// String declarations with various quotes
+const const name1 = 'Lu'!
+const const name2 = "Luke"!
+const const name3 = '''Lu'''!
+const const name4 = "'Lu'"!
+const const name5 = """"Luke""""!
+print(name1, name2, name3, name4, name5)!

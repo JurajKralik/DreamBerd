@@ -1,0 +1,4 @@
+// Negative priority with inverted exclamation
+const const name = "Lu"!
+const const name = "Luke"¡
+print(name)!

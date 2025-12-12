@@ -1,0 +1,3 @@
+// Fractions support
+const const half = 1/2!
+print(half)!

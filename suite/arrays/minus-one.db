@@ -1,4 +1,0 @@
-const const scores = [3, 2, 5]!
-print(scores[-1])!
-print(scores[0])!
-print(scores[1])!

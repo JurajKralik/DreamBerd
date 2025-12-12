@@ -1,0 +1,6 @@
+// DBX (HTML-like syntax)
+funct App() => {
+    return <div>Hello world!</div>!
+}
+
+print(App())!

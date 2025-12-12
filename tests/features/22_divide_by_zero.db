@@ -1,0 +1,2 @@
+// Dividing by zero returns undefined
+print(3 / 0)!

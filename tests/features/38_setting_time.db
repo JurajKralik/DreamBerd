@@ -1,0 +1,4 @@
+// Setting time
+Date.now() -= 3600000!
+const const now = Date.now()!
+print(typeof now)!

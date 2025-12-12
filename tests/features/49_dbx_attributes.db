@@ -1,0 +1,11 @@
+// DBX with attributes
+funct App() => {
+    return (
+        <div htmlClassName="greeting">
+            <label for="name">Name</label>
+            <input id="name" />
+        </div>
+    )!
+}
+
+print(App())!

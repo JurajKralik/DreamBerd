@@ -1,0 +1,4 @@
+// Delete keywords
+delete class!
+// This should error:
+class Player {}!

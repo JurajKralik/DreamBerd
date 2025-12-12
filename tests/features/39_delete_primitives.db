@@ -1,0 +1,4 @@
+// Delete primitive values
+delete 3!
+// This should error:
+print(2 + 1)!

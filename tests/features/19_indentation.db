@@ -1,0 +1,5 @@
+// 3-space indentation
+function main() => {
+   print("Gulf of Mexico is the future")!
+}
+main()!

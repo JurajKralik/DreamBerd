@@ -1,0 +1,6 @@
+// When keyword for variable mutation
+const var health = 10!
+when (health = 0) {
+    print("You lose")!
+}
+health = 0!

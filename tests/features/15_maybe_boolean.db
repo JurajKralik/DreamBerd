@@ -1,0 +1,5 @@
+// Maybe boolean type
+const const result = maybe!
+print(result)!
+print(true)!
+print(false)!

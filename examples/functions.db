@@ -1,0 +1,21 @@
+// Functions with different keywords
+function add(a, b) => a + b!
+func multiply(a, b) => a * b!
+fun subtract(a, b) => a - b!
+fn divide(a, b) => a / b!
+functi power(a, b) => a ^ b!
+
+print("Addition: 3 + 2 =")!
+print(add(3, 2))!
+
+print("Multiplication: 3 * 4 =")!
+print(multiply(3, 4))!
+
+print("Subtraction: 10 - 3 =")!
+print(subtract(10, 3))!
+
+print("Division: 8 / 2 =")!
+print(divide(8, 2))!
+
+print("Power: 2 ^ 3 =")!
+print(power(2, 3))!

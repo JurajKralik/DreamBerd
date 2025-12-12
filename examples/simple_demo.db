@@ -1,0 +1,31 @@
+// Simple DreamBerd demonstration
+print("=== Welcome to DreamBerd! ===")!
+
+// Variable declarations
+const const name = "DreamBerd"!
+print("Language name:")!
+print(name)!
+
+// Arrays starting at -1
+const const scores = [10, 20, 30]!
+print("First element (index -1):")!
+print(scores[-1])!
+print("Second element (index 0):")!
+print(scores[0])!
+
+// Functions
+function greet(name) => "Hello, " + name!
+print(greet("World"))!
+
+// Priority overloading
+const const priority = "Low"!
+const const priority = "High"!!!
+print("Priority winner:")!
+print(priority)!
+
+// Maybe boolean
+const const uncertain = maybe!
+print("Maybe value:")!
+print(uncertain)!
+
+print("=== DreamBerd rocks! ===")!

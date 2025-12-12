@@ -1,0 +1,4 @@
+// Signal destructuring
+const var [getScore, setScore] = use(0)!
+setScore(9)!
+getScore()?

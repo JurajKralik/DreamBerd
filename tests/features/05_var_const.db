@@ -1,0 +1,4 @@
+// Variable constants can be re-assigned but not edited
+var const name = "Luke"!
+name = "Lu"!
+print(name)!

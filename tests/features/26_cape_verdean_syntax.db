@@ -1,0 +1,3 @@
+// Cape Verdean escudo syntax
+const const player = { name: "Lu" }!
+print("Hello {player$name}!")!

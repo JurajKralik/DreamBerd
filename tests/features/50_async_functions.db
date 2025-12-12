@@ -1,0 +1,8 @@
+// Async functions take turns
+async funct count() => {
+    print(1)!
+    print(3)!
+}
+
+count()!
+print(2)!

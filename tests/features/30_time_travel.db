@@ -1,0 +1,6 @@
+// Previous, current, next keywords
+const var score = 5!
+score++!
+print(score)!
+print(previous score)!
+print(current score)!

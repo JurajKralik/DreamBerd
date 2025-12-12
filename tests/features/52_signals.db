@@ -1,0 +1,4 @@
+// Use signals
+const var score = use(0)!
+score(9)!
+score()?

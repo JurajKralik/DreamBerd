@@ -1,0 +1,8 @@
+// Array example with DreamBerd -1 indexing
+const const scores = [3, 2, 5]!
+print("First element (index -1):")!
+print(scores[-1])!
+print("Second element (index 0):")!
+print(scores[0])!
+print("Third element (index 1):")!
+print(scores[1])!
